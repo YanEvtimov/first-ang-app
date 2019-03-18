@@ -1,9 +1,8 @@
 #sec1-2-2 {
     width: auto;
     height: auto;
-    /*IMAGEbackground-image: url('computer-desk.jpg');
-    background-repeat: no-repeat;*/
-    /*^^TEMPORARY^^*/background-color: #fff;
+    background-image: url('../../../assets/images/computer-desk.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;

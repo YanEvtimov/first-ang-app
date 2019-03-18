@@ -5,9 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*IMAGEbackground-image: url('job-banner.jpg');
-    background-repeat: no-repeat;*/
-    /*^^TEMPORARY^^*/background-color: #F0F7F4;
+    background-image: url('../../../assets/images/job-banner.jpg');
+    background-repeat: no-repeat;background-color: #F0F7F4;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;

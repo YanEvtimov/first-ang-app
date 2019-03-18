@@ -9,8 +9,7 @@
     align-items: center;
     justify-content: center;
     background-color: #F0F7F4;*/
-    /*IMAGE!!!background-image: url('ui-ux-banner.jpg');*/
-    /*^^TEMPORARY!!!^^*/background-color: #333;
+    background-image: url('../../../assets/images/ui-ux-banner.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

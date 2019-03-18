@@ -40,35 +40,34 @@
     align-items: flex-end;
     justify-content: center;
 }
-/*IMAGES for BACKGROUND
+
 #sec2 figure:nth-of-type(1) div {
-    background-image: url('logIn.jpg');
+    background-image: url('../../../assets/images/logIn.jpg');
 }
 
 #sec2 figure:nth-of-type(2) div {
-    background-image: url('job-banner.jpg');
+    background-image: url('../../../assets/images/job-banner.jpg');
 }
 
 #sec2 figure:nth-of-type(3) div {
-    background-image: url('techDocP.jpg');
+    background-image: url('../../../assets/images/techDocP.jpg');
 }
 
 #sec2 figure:nth-of-type(4) div {
-    background-image: url('ui-ux-banner.jpg');
+    background-image: url('../../../assets/images/ui-ux-banner.jpg');
 }
 
 #sec2 figure:nth-of-type(5) div {
-    background-image: url('computer-desk.jpg');
+    background-image: url('../../../assets/images/computer-desk.jpg');
 }
 
 #sec2 figure:nth-of-type(6) div {
-    background-image: url('logIn.jpg');
+    background-image: url('../../../assets/images/logIn.jpg');
 }
 
 #sec2 figure div:hover {
     transform: scale(1.2);
 }
-^^TEMPORARY^^*/
 
 #sec2 figure div figcaption {
     color: #5A9367;
