@@ -1,0 +1,176 @@
+#sec2 {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 1rem;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    display: grid;
+    grid-template-rows: repeat(4, auto-fit);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#sec2 h3 {
+    grid-area: 1/1/2/4;
+    color: #3C493F;
+    font-size: 2rem;
+}
+
+#sec2 figure {
+    border: 2px solid #A2E3C4;
+    border-radius: 3px;
+    width: 25vw;
+    height: 250px;
+    background-color: #F0F7F4;
+    overflow: hidden;
+}
+
+#sec2 figure div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.8s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/*IMAGES for BACKGROUND
+#sec2 figure:nth-of-type(1) div {
+    background-image: url('logIn.jpg');
+}
+
+#sec2 figure:nth-of-type(2) div {
+    background-image: url('job-banner.jpg');
+}
+
+#sec2 figure:nth-of-type(3) div {
+    background-image: url('techDocP.jpg');
+}
+
+#sec2 figure:nth-of-type(4) div {
+    background-image: url('ui-ux-banner.jpg');
+}
+
+#sec2 figure:nth-of-type(5) div {
+    background-image: url('computer-desk.jpg');
+}
+
+#sec2 figure:nth-of-type(6) div {
+    background-image: url('logIn.jpg');
+}
+
+#sec2 figure div:hover {
+    transform: scale(1.2);
+}
+^^TEMPORARY^^*/
+
+#sec2 figure div figcaption {
+    color: #5A9367;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    transition: all 0.8s ease;
+}
+
+#sec2 figure div figcaption:hover {
+    /*border-bottom: 2px solid #5A9367;*/
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+figcaption:before,
+figcaption:after {
+  content: '';
+  height: 2px;
+  background: #5A9367;
+  display: block;
+  transition: width 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+figcaption:before {
+  width: 0;
+}
+
+figcaption:after {
+  width: 0;
+}
+
+figcaption:hover:before {
+    width: 100%;
+  }
+
+figcaption:hover:after {
+  width: 100%;
+}
+
+/*#sec2 figure img {
+    max-width: 100%;
+    opacity: 0.5;
+    transition: 0.2 ease;
+}
+
+#sec2 figure img:hover {
+    opacity: 1;
+}
+
+#sec2 figure figcaption {
+    border-top: 2px solid #A2E3C4;
+    color: #5A9367;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+}*/
+
+#sec2 button {
+    grid-area: 4/1/5/4;
+    border: none;
+    padding: 0.5rem;
+    color: #5A9367;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+#sec2 button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#sec2 button:before,
+#sec2 button:after {
+  content: '';
+  height: 2px;
+  background: #5A9367;
+  display: block;
+  transition: width 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+#sec2 button:before {
+  width: 100%;
+}
+
+#sec2 button:after {
+  width: 100%;
+}
+
+#sec2 button:hover:before {
+    width: 0;
+  }
+
+#sec2 button:hover:after {
+  width: 0;
+}
+
+#sec2 button:hover {
+    cursor: pointer;
+}

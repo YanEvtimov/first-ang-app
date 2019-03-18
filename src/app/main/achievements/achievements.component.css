@@ -1,0 +1,79 @@
+#sec1-2-1 {
+    width: auto;
+    height: 95vh;
+    background-image: linear-gradient(white,  #F0F7F4);
+    padding: 2rem 1rem 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "GH GH GH"
+        "GI1 GI2 GI3"
+        "GP1 GP2 GP3"
+        "GF1 GF2 GF3";
+    align-items: center;
+    justify-items: center;
+}
+
+#sec1-2-1 h3 {
+    grid-area: GH;
+    font-size: 2rem;
+    color: #3C493F;
+}
+
+#sec1-2-1 i {
+    color: #3C493F;
+}
+
+#sec1-2-1 i:nth-of-type(1) {
+    grid-area: GI1;
+}
+
+#sec1-2-1 i:nth-of-type(2) {
+    grid-area: GI2;
+}
+
+#sec1-2-1 i:nth-of-type(3) {
+    grid-area: GI3;
+}
+
+
+#sec1-2-1 p:nth-of-type(1) {
+    grid-area: GP1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5A9367;
+}
+
+#sec1-2-1 p:nth-of-type(2) {
+    grid-area: GP2;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5A9367;
+}
+
+#sec1-2-1 p:nth-of-type(3) {
+    grid-area: GP3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5A9367;
+}
+
+
+#sec1-2-1 p:nth-of-type(4) {
+    grid-area: GF1;
+    font-weight: bold;
+    align-self: start;
+}
+
+#sec1-2-1 p:nth-of-type(5) {
+    grid-area: GF2;
+    font-weight: bold;
+    align-self: start;
+}
+
+#sec1-2-1 p:nth-of-type(6) {
+    grid-area: GF3;
+    font-weight: bold;
+    align-self: start;
+}

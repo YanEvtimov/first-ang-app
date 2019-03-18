@@ -1,0 +1,50 @@
+#sec1 {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 0.5fr 2fr;
+    justify-items: center;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F7F4;*/
+    /*IMAGE!!!background-image: url('ui-ux-banner.jpg');*/
+    /*^^TEMPORARY!!!^^*/background-color: #333;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#sec1 h2 {
+    color: /*#3C493F*/ #F0F7F4;
+    font-size: 2.7rem;
+    align-self: end;
+}
+
+
+#sec1 p {
+    color: #A2E3C4;
+    align-self: top;
+}
+
+#sec1 a.arrow {
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    /*position: absolute;
+    bottom: 2rem;*/
+    align-self: end;
+    margin-bottom: 5vh;
+}
+
+#sec1 a.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}

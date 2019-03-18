@@ -1,0 +1,108 @@
+#sec1-2-2 {
+    width: auto;
+    height: auto;
+    /*IMAGEbackground-image: url('computer-desk.jpg');
+    background-repeat: no-repeat;*/
+    /*^^TEMPORARY^^*/background-color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.skillsBar {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+        "someT1 perc1"
+        "divB1 perc1"
+        "someT2 perc2"
+        "divB2 perc2"
+        "someT3 perc3"
+        "divB3 perc3"
+        "someT4 perc4"
+        "divB4 perc4";
+}
+
+.skillsBar h4:nth-of-type(1) {
+    grid-area: someT1;
+}
+.skillsBar p:nth-of-type(1) {
+    grid-area: perc1;
+    align-self: center;
+}
+
+.skillsBar h4:nth-of-type(2) {
+    grid-area: someT2;
+}
+.skillsBar p:nth-of-type(2) {
+    grid-area: perc2;
+    align-self: center;
+}
+
+.skillsBar h4:nth-of-type(3) {
+    grid-area: someT3;
+}
+.skillsBar p:nth-of-type(3) {
+    grid-area: perc3;
+    align-self: center;
+}
+
+.skillsBar h4:nth-of-type(4) {
+    grid-area: someT4;
+}
+.skillsBar p:nth-of-type(4) {
+    grid-area: perc4;
+    align-self: center;
+}
+
+.skillsBar div {
+    height: 15%;
+    background-color: #3C493F;
+    border-radius: 10px;
+}
+
+.skillsBar div:nth-of-type(1) {
+    grid-area: divB1;
+    width: 90%;
+}
+
+.skillsBar div:nth-of-type(2) {
+    grid-area: divB2;
+    width: 60%;
+}
+.skillsBar div:nth-of-type(3) {
+    grid-area: divB3;
+    width: 50%;
+}
+
+.skillsBar div:nth-of-type(4) {
+    grid-area: divB4;
+    width: 70%;
+}
+
+#sec1-2-2 h3 {
+    color: #3C493F;
+    margin: 0;
+    padding: 1rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.skillsBar p {
+    font-weight: bold;
+    color: #3C493F;
+    margin: 0;
+    padding: 1rem;
+}
+
+.skillsBar h4 {
+    color: #5A9367;
+    margin: 0;
+    padding: 1rem;
+}

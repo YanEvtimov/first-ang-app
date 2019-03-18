@@ -1,0 +1,10 @@
+.body {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto auto;
+}
