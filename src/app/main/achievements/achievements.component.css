@@ -77,3 +77,22 @@
     font-weight: bold;
     align-self: start;
 }
+
+@media screen and (max-width: 767px) {
+    #sec1-2-1 {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+        "GH"
+        "GI1"
+        "GP1"
+        "GF1"
+        "GI2"
+        "GP2"
+        "GF2"
+        "GI3"
+        "GP3"
+        "GF3";
+    }
+}

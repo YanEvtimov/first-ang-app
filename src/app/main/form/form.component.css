@@ -136,3 +136,15 @@ label {
     color: #5A9367;
     font-weight: bold;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #sec2-3 div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sec2-3 div {
+        width: 66%;
+    }
+}

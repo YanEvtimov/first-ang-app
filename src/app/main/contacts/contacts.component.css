@@ -49,3 +49,9 @@
 .buttons a:hover {
     text-shadow: 0.5px 0.5px rgb(201, 201, 201);
 }
+
+@media screen and (max-width: 767px) {
+    #sec3 {
+        height: auto;
+    }
+}
