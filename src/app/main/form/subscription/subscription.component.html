@@ -1,0 +1,15 @@
+<div>
+  <h3>Subscribe for Free Templates</h3>
+  <form id="form1" (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="enter your name or username *" required [(ngModel)]="data.name" #name="ngModel">
+    <label for="mail">Mail</label>
+    <input type="email" id="mail" name="email" placeholder="enter your e-mail address *" required email [(ngModel)]="data.email" #email="ngModel">
+    <span *ngIf="!email.valid && email.touched">Please enter a valid email address</span>
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="password" placeholder="******" required [(ngModel)]="data.password" #password="ngModel">
+    <button type="submit" name="subscribe" [disabled]="!f.valid">Subscribe</button>
+  </form>
+  <!--<p>Don't have an account? <a id="createAccount" href="#sec2-3">Create one</a></p>-->
+  <p><a id="subsList" (click)="getSubscribers()">View subscribers</a></p>
+</div>

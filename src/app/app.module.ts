@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,6 +13,8 @@ import { SkillsComponent } from './main/skills/skills.component';
 import { ProjectsComponent } from './main/projects/projects.component';
 import { FormComponent } from './main/form/form.component';
 import { ContactsComponent } from './main/contacts/contacts.component';
+import { SubscriptionComponent } from './main/form/subscription/subscription.component';
+import { StoreDataService } from './services/server.service';
 
 @NgModule({
   declarations: [
@@ -23,12 +27,15 @@ import { ContactsComponent } from './main/contacts/contacts.component';
     SkillsComponent,
     ProjectsComponent,
     FormComponent,
-    ContactsComponent
+    ContactsComponent,
+    SubscriptionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [StoreDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

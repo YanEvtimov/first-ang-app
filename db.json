@@ -1,0 +1,52 @@
+{
+  "subscribers": [
+    {
+      "id": 1,
+      "name": "Sebastian",
+      "mail": "sebastian@codingthesmartway.com",
+      "password": "seba_123"
+    },
+    {
+      "id": 2,
+      "name": "Steve",
+      "mail": "steve@codingthesmartway.com",
+      "password": "steve_123"
+    },
+    {
+      "id": 3,
+      "name": "Ann",
+      "mail": "ann@codingthesmartway.com",
+      "password": "ann_123"
+    },
+    {
+      "name": "Johny",
+      "mail": "johny@codingthesmartway.com",
+      "password": "johny_123",
+      "id": 4
+    },
+    {
+      "name": "Yan",
+      "mail": "yan@bg.bg",
+      "password": "yan123",
+      "id": 5
+    },
+    {
+      "name": "Peter",
+      "mail": "pesho@mailg.com",
+      "password": "pesho_123",
+      "id": 6
+    },
+    {
+      "name": "Nicole Sperz",
+      "mail": "nicole@mailg.com",
+      "password": "nocole_123.",
+      "id": 7
+    },
+    {
+      "name": "Johny English",
+      "email": "johneng@yah.com",
+      "password": "john_eng123",
+      "id": 8
+    }
+  ]
+}
