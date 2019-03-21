@@ -11,6 +11,7 @@ import { StoreDataService } from 'src/app/services/server.service';
 })
 export class SubscriptionComponent implements OnInit {
   data: any = {};
+  //newdata: any = {};
 
   @ViewChild('f')  singupForm: NgForm;
 
@@ -19,10 +20,6 @@ export class SubscriptionComponent implements OnInit {
   ngOnInit() {
   }
 
-//  onSubmit(form: NgForm) {
-//    console.log(form)
-//  }
-  
   onSubmit() {
     this.storeDataService.storeData(this.data)
       .subscribe(
@@ -30,7 +27,15 @@ export class SubscriptionComponent implements OnInit {
         (error) => console.log(error)
       );
     //alert(JSON.stringify(this.data));
-    //this.post('http://localhost:3000/subscribers', JSON.stringify(this.data));
   }
-
+  
+  getSubscribers() {
+    this.storeDataService.getData()
+      .subscribe(
+        (response: any []) => {
+          alert("Vielen dank на все наши subscribers: " + /*this.newdata = */response + "!");
+        },
+        (error) => console.log(error)
+      );
+  }
 }

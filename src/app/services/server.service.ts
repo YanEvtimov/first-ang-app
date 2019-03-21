@@ -7,4 +7,8 @@ export class StoreDataService {
     storeData(data: any []) {
         return this.http.post('http://localhost:3000/subscribers', data);
     }
+
+    getData() {
+        return this.http.get('http://localhost:3000/subscribers')
+    }
 }
