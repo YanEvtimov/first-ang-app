@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { StoreDataService } from 'src/app/services/server.service';
-//import { post } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-subscription',
@@ -11,7 +10,6 @@ import { StoreDataService } from 'src/app/services/server.service';
 })
 export class SubscriptionComponent implements OnInit {
   data: any = {};
-  //newdata: any = {};
 
   @ViewChild('f')  singupForm: NgForm;
 
@@ -26,14 +24,15 @@ export class SubscriptionComponent implements OnInit {
         (response) => console.log(response),
         (error) => console.log(error)
       );
-    //alert(JSON.stringify(this.data));
+    
+    alert('Thank you for your subscription, ' + this.data.name + ', you can now add your own project templates!');
   }
   
   getSubscribers() {
     this.storeDataService.getData()
       .subscribe(
         (response: any []) => {
-          alert("Vielen dank на все наши subscribers: " + /*this.newdata = */response + "!");
+          alert("Vielen dank на все наши subscribers: " + /*this.newdata = */response.map(v => v.name).join(', ') + "!");
         },
         (error) => console.log(error)
       );

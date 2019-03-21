@@ -15,6 +15,7 @@ import { FormComponent } from './main/form/form.component';
 import { ContactsComponent } from './main/contacts/contacts.component';
 import { SubscriptionComponent } from './main/form/subscription/subscription.component';
 import { StoreDataService } from './services/server.service';
+import { HiddenComponent } from './main/form/hidden/hidden.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { StoreDataService } from './services/server.service';
     ProjectsComponent,
     FormComponent,
     ContactsComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
+    HiddenComponent
   ],
   imports: [
     BrowserModule,

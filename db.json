@@ -47,6 +47,24 @@
       "email": "johneng@yah.com",
       "password": "john_eng123",
       "id": 8
+    },
+    {
+      "name": "Brat",
+      "email": "brat@pit.com",
+      "password": "brat_123",
+      "id": 9
+    },
+    {
+      "name": "Gery",
+      "email": "gery@bg.bg",
+      "password": "gar123_gery",
+      "id": 10
+    },
+    {
+      "name": "Pepi",
+      "email": "afha@faf.com",
+      "password": "fagag",
+      "id": 11
     }
   ]
 }
