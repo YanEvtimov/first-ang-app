@@ -65,6 +65,12 @@
       "email": "afha@faf.com",
       "password": "fagag",
       "id": 11
+    },
+    {
+      "name": "Trifon",
+      "email": "fa@afgag.bg",
+      "password": "tri_123_fon",
+      "id": 12
     }
   ]
 }

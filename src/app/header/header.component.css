@@ -6,7 +6,7 @@ header {
     width: 100%;
     height: auto;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #3C493F;
     z-index: 1;

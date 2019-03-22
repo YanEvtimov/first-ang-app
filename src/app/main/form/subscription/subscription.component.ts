@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { StoreDataService } from 'src/app/services/server.service';
 
@@ -10,6 +10,7 @@ import { StoreDataService } from 'src/app/services/server.service';
 })
 export class SubscriptionComponent implements OnInit {
   data: any = {};
+  names: string;
 
   @ViewChild('f')  singupForm: NgForm;
 
@@ -32,9 +33,14 @@ export class SubscriptionComponent implements OnInit {
     this.storeDataService.getData()
       .subscribe(
         (response: any []) => {
-          alert("Vielen dank на все наши subscribers: " + /*this.newdata = */response.map(v => v.name).join(', ') + "!");
+          //alert("Vielen dank на все наши subscribers: " + /*this.newdata = */response.map(v => v.name).join(', ') + "!");
+          return this.names = response.map(v => v.name).join(', ');
         },
         (error) => console.log(error)
       );
+  }
+
+  closeArticle() {
+    this.names = Boolean(false);
   }
 }

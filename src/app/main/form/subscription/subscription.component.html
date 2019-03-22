@@ -1,5 +1,5 @@
 <div>
-  <h3>Subscribe for Free Templates</h3>
+  <h3>Subscribe to add your projects</h3>
   <form id="form1" (ngSubmit)="onSubmit(f)" #f="ngForm">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="enter your name or username *" required [(ngModel)]="data.name" #name="ngModel">
@@ -11,5 +11,14 @@
     <button type="submit" name="subscribe" [disabled]="!f.valid">Subscribe</button>
   </form>
   <!--<p>Don't have an account? <a id="createAccount" href="#sec2-3">Create one</a></p>-->
-  <p><a id="subsList" (click)="getSubscribers()">View subscribers</a></p>
+  <p><a id="subsList" (click)="getSubscribers()">View subscribers</a><!--{{ names }}--></p>
 </div>
+<article id="hiddenSubs" *ngIf="names">
+  <section class="clsBtn" (click)="closeArticle()">
+    <section class="barI"></section>
+    <section class="barII"></section>
+    <section class="barIII"></section>
+  </section>
+  <h3>Vielen dank на все наши subscribers:</h3>
+  <p>{{ names }}</p>
+</article>
