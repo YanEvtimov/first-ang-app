@@ -41,6 +41,6 @@ export class SubscriptionComponent implements OnInit {
   }
 
   closeArticle() {
-    this.names = Boolean(false);
+    this.names = '';
   }
 }

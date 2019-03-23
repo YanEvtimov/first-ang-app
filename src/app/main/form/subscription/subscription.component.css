@@ -113,7 +113,7 @@ article h3 {
     color: #F0F7F4;
 }
 
-article p.subs-list {
+/*article p.subs-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -128,7 +128,7 @@ article p.subs-list div {
 
 article p.subs-list div h3 {
     color: #A2E3C4;
-}
+}*/
 
 .clsBtn {
     display: inline-block;
