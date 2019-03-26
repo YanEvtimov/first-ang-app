@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Project } from './project.model';
 import { NgForm } from '@angular/forms';
-import { trigger, state, style } from '@angular/animations';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-projects',
@@ -9,20 +9,34 @@ import { trigger, state, style } from '@angular/animations';
   styleUrls: ['./projects.component.css'],
   animations: [
     trigger('changeState', [
-      state('invisible', style({
-        'background-color': 'red',
-        transform: 'translateY(-100px)'
-      })),
-      state('visible', style({
-        'background-color': 'blue',
+      state('in', style({
+        opacity: 1,
         transform: 'translateY(0)'
-      }))
+      })),
+      transition('void => *', [
+        style({
+          opacity: 0,
+          transform: 'translateY(-100px)'
+        }),
+        animate(150)
+      ]),
+    ]),
+    trigger('addPro', [
+      state('new', style({
+        opacity: 1,
+        transform: 'translateY(0)'
+      })),
+      transition('void => *', [
+        style({
+          opacity: 0,
+          transform: 'translateY(-100px)'
+        }),
+        animate(250)
+      ]),
     ])
   ]
 })
 export class ProjectsComponent implements OnInit {
-  state = 'invisible';
-
   info: any = {};
 
   public show: boolean = false;
@@ -30,10 +44,7 @@ export class ProjectsComponent implements OnInit {
 
   @ViewChild('add') addProject: NgForm;
 
-  projects: Project[] = [
-    new Project('Just a Test', 'https://www.jpl.nasa.gov/spaceimages/details.php?id=PIA22835'),
-    new Project(this.info.heading, '../../../assets/images/logIn.jpg')
-  ];
+  projects: Project[] = [];
 
   constructor() { }
 
@@ -50,9 +61,14 @@ export class ProjectsComponent implements OnInit {
   }
 
   onAddProject() {
-    console.log('yay!');
+    this.show = !this.show;
 
-    return this.projects.push(new Project(this.info.heading, this.info.path));
+    if (this.show)
+      this.buttonName = "close";
+    else
+      this.buttonName = "add project";
+
+    this.projects.push(new Project(this.info.heading, this.info.path));
   }
 
 }
