@@ -31,5 +31,17 @@
       <figcaption>Same Thing</figcaption>
     </div>
   </figure>
-  <button><a href="#sec2-3">add project</a></button>
+  <figure *ngFor="let project of projects">
+    <div style="background-image: url( '{{ project.imagePath }}' )">
+      <figcaption>{{ project.name }}</figcaption>
+    </div>
+  </figure>
+  <button><a (click)="onOpenForm()">{{ buttonName }}</a></button>
+  <form ngSubmit="onAddProject(add)" #add="ngForm" *ngIf="show" [@changeState]="state">
+    <label for="proName">Add name:</label>
+    <input type="text" id="proName" name="name" placeholder="Project name" required [(ngModel)]="info.heading" #heading="ngModel">
+    <label for="image">Add image:</label>
+    <input type="text" id="image" name="imagePath" placeholder="Image url" required  [(ngModel)]="info.path" #path="ngModel">
+    <button type="submit">Add</button>
+  </form>
 </section>
