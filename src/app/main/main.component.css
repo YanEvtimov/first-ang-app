@@ -2,11 +2,8 @@ main {
     grid-area: main;
     width: 100%;
     height: auto;
-    /*display: flex;
-    flex-direction: column;*/
 }
 
 section {
     width: 100%;
-    /*background-color: darkblue;*/
 }

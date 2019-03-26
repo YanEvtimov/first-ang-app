@@ -32,7 +32,7 @@
     </div>
   </figure>
   <figure *ngFor="let project of projects" [@addPro]>
-    <div style="background-image: url( '{{ project.imagePath }}' )">
+    <div><!-- *ngIf="project.imagePath" [style.background-image]="getImage(project.imagePath)"-->
       <figcaption>{{ project.name }}</figcaption>
     </div>
   </figure>

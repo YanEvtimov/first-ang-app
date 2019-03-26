@@ -71,6 +71,12 @@
       "email": "fa@afgag.bg",
       "password": "tri_123_fon",
       "id": 12
+    },
+    {
+      "name": "New",
+      "email": "new_subscriber@email.com",
+      "password": "new_123subscriber",
+      "id": 13
     }
   ]
 }

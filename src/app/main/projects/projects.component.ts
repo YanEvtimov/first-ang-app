@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { Project } from './project.model';
 import { NgForm } from '@angular/forms';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-projects',
@@ -46,9 +47,13 @@ export class ProjectsComponent implements OnInit {
 
   projects: Project[] = [];
 
-  constructor() { }
+  constructor(private sanitization: DomSanitizer) { }
 
   ngOnInit() {
+  }
+
+  getImage(image) {
+    return this.sanitization.bypassSecurityTrustStyle(image);
   }
 
   onOpenForm() {
@@ -68,6 +73,7 @@ export class ProjectsComponent implements OnInit {
     else
       this.buttonName = "add project";
 
+    //this.info.path = this.sanitization.bypassSecurityTrustStyle(this.info.path);
     this.projects.push(new Project(this.info.heading, this.info.path));
   }
 
