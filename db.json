@@ -77,6 +77,12 @@
       "email": "new_subscriber@email.com",
       "password": "new_123subscriber",
       "id": 13
+    },
+    {
+      "name": "Name",
+      "email": "noname@maile.gb",
+      "password": "bggbbg",
+      "id": 14
     }
   ]
 }

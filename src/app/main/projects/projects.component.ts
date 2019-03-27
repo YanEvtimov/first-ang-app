@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
   animations: [
-    trigger('changeState', [
+    trigger('openFormAnimation', [
       state('in', style({
         opacity: 1,
         transform: 'translateY(0)'
@@ -22,7 +22,7 @@ import { DomSanitizer } from '@angular/platform-browser';
         animate(150)
       ]),
     ]),
-    trigger('addPro', [
+    trigger('addProjectAnimation', [
       state('new', style({
         opacity: 1,
         transform: 'translateY(0)'
@@ -56,7 +56,7 @@ export class ProjectsComponent implements OnInit {
     return this.sanitization.bypassSecurityTrustStyle(image);
   }
 
-  onOpenForm() {
+  openForm() {
     this.show = !this.show;
 
     if (this.show)

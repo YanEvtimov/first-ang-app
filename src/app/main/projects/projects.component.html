@@ -31,13 +31,13 @@
       <figcaption>Same Thing</figcaption>
     </div>
   </figure>
-  <figure *ngFor="let project of projects" [@addPro]>
+  <figure *ngFor="let project of projects" [@addProjectAnimation]>
     <div><!-- *ngIf="project.imagePath" [style.background-image]="getImage(project.imagePath)"-->
       <figcaption>{{ project.name }}</figcaption>
     </div>
   </figure>
-  <button><a (click)="onOpenForm()">{{ buttonName }}</a></button>
-  <form (ngSubmit)="onAddProject(add)" #add="ngForm" *ngIf="show" [@changeState]>
+  <button><a (click)="openForm()">{{ buttonName }}</a></button>
+  <form (ngSubmit)="onAddProject(add)" #add="ngForm" *ngIf="show" [@openFormAnimation] novalidate>
     <label for="proName">Add name:</label>
     <input type="text" id="proName" name="name" placeholder="Project name" required [(ngModel)]="info.heading" #heading="ngModel">
     <label for="image">Add image:</label>

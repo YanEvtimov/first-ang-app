@@ -23,7 +23,7 @@ export class SubscriptionComponent implements OnInit {
     this.storeDataService.storeData(this.data)
       .subscribe(
         (response) => console.log(response),
-        (error) => console.log(error)
+        (error) => alert(error + ' occured, your subscription was not successfull.')
       );
     
     alert('Thank you for your subscription, ' + this.data.name + ', you can now add your own project templates!');
@@ -36,11 +36,11 @@ export class SubscriptionComponent implements OnInit {
           //alert("Vielen dank на все наши subscribers: " + /*this.newdata = */response.map(v => v.name).join(', ') + "!");
           return this.names = response.map(v => v.name).join(', ');
         },
-        (error) => console.log(error)
+        (error) => alert(error + ' occured, you cannot currently see a list of our subscribers.')
       );
   }
 
   closeArticle() {
-    this.names = '';
+    this.names = undefined;
   }
 }

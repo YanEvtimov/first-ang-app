@@ -1,6 +1,6 @@
 <div>
   <h3>Subscribe to add your projects</h3>
-  <form id="form1" (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <form id="form1" (ngSubmit)="onSubmit(f)" #f="ngForm" novalidate>
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="enter your name or username *" required [(ngModel)]="data.name" #name="ngModel" minlength="2">
     <span *ngIf="!name.valid && name.touched">Your username should be at least 2 characters long!</span>
