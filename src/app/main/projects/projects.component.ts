@@ -75,6 +75,7 @@ export class ProjectsComponent implements OnInit {
 
     //this.info.path = this.sanitization.bypassSecurityTrustStyle(this.info.path);
     this.projects.push(new Project(this.info.heading, this.info.path));
+    this.addProject.reset();
   }
 
 }

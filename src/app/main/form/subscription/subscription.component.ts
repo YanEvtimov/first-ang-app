@@ -25,7 +25,7 @@ export class SubscriptionComponent implements OnInit {
         (response) => console.log(response),
         (error) => alert(error + ' occured, your subscription was not successfull.')
       );
-    
+    this.singupForm.reset();
     alert('Thank you for your subscription, ' + this.data.name + ', you can now add your own project templates!');
   }
   

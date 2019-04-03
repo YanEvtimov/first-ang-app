@@ -32,7 +32,7 @@
     </div>
   </figure>
   <figure *ngFor="let project of projects" [@addProjectAnimation]>
-    <div><!-- *ngIf="project.imagePath" [style.background-image]="getImage(project.imagePath)"-->
+    <div *ngIf="project.imagePath" [ngStyle]="{backgroundImage:'url(' + project.imagePath + ')'}"><!-- *ngIf="project.imagePath" [style.background-image]="getImage(project.imagePath)"-->
       <figcaption>{{ project.name }}</figcaption>
     </div>
   </figure>
@@ -42,6 +42,6 @@
     <input type="text" id="proName" name="name" placeholder="Project name" required [(ngModel)]="info.heading" #heading="ngModel">
     <label for="image">Add image:</label>
     <input type="text" id="image" name="imagePath" placeholder="Image url" required  [(ngModel)]="info.path" #path="ngModel">
-    <button type="submit" [disabled]="!add.valid || add.untouched">Add</button>
+    <button type="submit" [disabled]="!add.valid || add.untouched">+</button>
   </form>
 </section>

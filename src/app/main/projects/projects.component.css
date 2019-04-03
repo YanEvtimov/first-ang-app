@@ -41,9 +41,9 @@
     justify-content: center;
 }
 
-#sec2 figure div {
+/*#sec2 figure div {
     background-image: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-}
+}*/
 
 #sec2 figure:nth-of-type(1) div {
     background-image: url('../../../assets/images/logIn.jpg');
@@ -189,6 +189,10 @@ figcaption:hover:after {
     justify-content: space-around;
     padding: 0.5rem;
     text-align: center;
+}
+
+#sec2 form button {
+    font-size: 2.5rem;
 }
 
 #sec2 form label {
