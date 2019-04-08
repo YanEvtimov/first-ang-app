@@ -15,7 +15,7 @@
   <!--<p>Don't have an account? <a id="createAccount" href="#sec2-3">Create one</a></p>-->
   <p><a id="subsList" (click)="getSubscribers()">View subscribers</a></p>
 </div>
-<article id="hiddenSubs" *ngIf="names">
+<article id="hiddenSubs" *ngIf="names" [@viewSubscibersAnimation]>
   <section class="clsBtn" (click)="closeArticle()">
     <section class="barI"></section>
     <section class="barII"></section>
